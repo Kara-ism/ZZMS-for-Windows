@@ -1,4 +1,4 @@
-﻿/*
+/*
  NPC Name: 		Athena Pierce
  Map(s): 		Maple Road : Spilt road of choice
  Description: 		Job tutorial, movie clip

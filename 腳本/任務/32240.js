@@ -1,4 +1,4 @@
-/* RED 1st impact
+﻿/* RED 1st impact
  The Explorer Book and A Maple Leaf
  Made by Daenerys
  */
@@ -42,7 +42,7 @@ function end(mode, type, selection) {
     } else if (status == 2) {
         qm.lockUI(true);
         qm.showEffect(false, "adventureStory/mapleLeaf/0");
-        qm.wait(1800);
+        qm.exceTime(1800);
     } else if (status == 3) {
         qm.lockUI(false);
         qm.sendNextS("這楓葉是什麼? 這麼看來在楓之島上有巨大的楓樹吧. 這楓葉是一路跟著我到這的嗎?", 17);

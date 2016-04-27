@@ -22,9 +22,9 @@ function action(mode, type, selection) {
         ms.lockUI(true);
         ms.disableOthers(true);
         ms.getDirectionStatus(true);
-        ms.getDirectionEffect(3, "", [2]);
+        ms.playerMoveRight();
     } else if (status == 1) {
-        ms.getDirectionEffect(3, "", [0]);
+        ms.playerWaite();
         ms.sendNextS("#b腦袋一團混亂...", 3);
     } else if (status == 2) {
         ms.sendNextPrevS("#b但是我的力量將近都消失是無法改變的事實。", 3);
@@ -37,7 +37,7 @@ function action(mode, type, selection) {
     } else if (status == 6) {
         ms.sendNextPrevS("#b嗯…決定一下該怎樣做 。#h0#。要使用對黑魔法師所使用過的力量，還是朝黑魔法師使用憤怒的力量。", 3);
     } else if (status == 7) {
-        ms.getDemonSelection();
+        ms.getJobSelection(true);
     } else if (status == 8) {
         if (jobSelect == -1) {
             jobSelect = selection;

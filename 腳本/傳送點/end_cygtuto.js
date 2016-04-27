@@ -1,4 +1,4 @@
-﻿function enter(pi) {
+function enter(pi) {
     if (pi.isQuestActive(20839)) {
         pi.playPortalSE();
         pi.warp(130030006, 0);

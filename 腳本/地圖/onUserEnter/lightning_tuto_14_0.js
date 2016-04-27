@@ -1,4 +1,4 @@
-/* global ms */
+﻿/* global ms */
 var status = -1;
 var select = -1;
 
@@ -13,7 +13,7 @@ function action(mode, type, selection) {
     if (status <= i++) {
         ms.dispose();
     } else if (status === i++) {
-        ms.getDirectionStatus(true);
+        ms.getDirectionStatus(false);
         ms.lockUI(1, 1);
         ms.spawnNPCRequestController(1032203, 0, 0, 0, 5455262);
         ms.getDirectionEffect(1, "", [1500]);
@@ -46,7 +46,7 @@ function action(mode, type, selection) {
     } else if (status === i++) {
         ms.getNPCTalk(["該怎麼辦?失去光的力量，現在的我，我..."], [3, 0, 0, 0, 17, 0, 1, 1, 0]);
     } else if (status === i++) {
-        ms.getNPCTalk([], [3, 0, 0, 23, 1, 0]);
+        ms.getJobSelection(true);
     } else if (status === i++) {
         if (select === -1) {
             select = selection;
