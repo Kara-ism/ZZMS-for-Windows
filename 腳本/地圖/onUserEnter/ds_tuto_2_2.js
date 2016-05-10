@@ -43,7 +43,7 @@ function action(mode, type, selection) {
     } else if (status == 6) {
         ms.removeNPCRequestController(2159309);
         ms.spawnNPCRequestController(2159309, 108, 50, 1);
-        ms.exceTime(1, "", [1000]);
+        ms.exceTime(1000);
     } else if (status == 7) {
         ms.sendNextS("果然很有一套… 真是有趣。 哈哈哈哈！", 5, 2159308);
     } else if (status == 8) {
